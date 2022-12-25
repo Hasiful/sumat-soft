@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    box-sizing: border-box;
     font-family: 'Nunito Sans',
         sans-serif;
 }
@@ -64,6 +63,39 @@ img {
 
 .section_padding {
     padding: 50px 0px;
+}
+
+/* section title */
+.section_title {
+    max-width: 990px;
+    width: 100%;
+    margin: 0px auto;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+.section_heading_inner {
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.section_heading_inner::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 200px;
+    background-color: var(--mainColor);
+}
+
+.section_title_heading {
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--headingColor);
+    font-weight: 800;
+    text-align: center;
 }
 
 .input_control {
