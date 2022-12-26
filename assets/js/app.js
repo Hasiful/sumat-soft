@@ -1,5 +1,5 @@
 // about slider
-    $('.about_slider').slick({
+    $('.about_slider,.success_slider').slick({
         dots: true,
         arrows: true,
         autoplay: true,
