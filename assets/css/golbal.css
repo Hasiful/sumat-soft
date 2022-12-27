@@ -98,6 +98,18 @@ img {
     text-align: center;
 }
 
+.section_title_textInner {
+    margin-top: 40px;
+}
+
+.section_title_text {
+    text-align: center;
+    color: var(--headingColor);
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 300;
+}
+
 .input_control {
     border: 1px solid var(--inputColor);
     outline: none;

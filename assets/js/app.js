@@ -1,7 +1,17 @@
 // about slider
-    $('.about_slider,.success_slider').slick({
+    $('.about_slider').slick({
         dots: true,
         arrows: true,
+        autoplay: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+    });
+
+    $('.success_slider').slick({
+        dots: true,
+        arrows: false,
         autoplay: true,
         infinite: true,
         speed: 300,

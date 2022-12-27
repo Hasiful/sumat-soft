@@ -519,6 +519,11 @@
 
 /* our project section */
 
+.recent_project {
+    position: relative;
+    background-color: var(--bgColor);
+}
+
 .recent_project_wrapper {
     max-width: 960px;
     width: 100%;
@@ -583,6 +588,224 @@
 
 .project_btn_wrapper .global_btn {
     text-align: center;
+}
+
+/* benifits section */
+
+.benifits_section {
+    background-color: var(--bgColor);
+}
+
+.benifits_wrapper {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.benifits_wrapper .row {
+    gap: 20px 0px;
+}
+
+.bentifit_item {
+    height: 100%;
+    min-height: 320px;
+    background-color: var(--textColor);
+    padding: 20px;
+}
+
+.benifits_item_thumbnail {
+    width: 64px;
+    margin: 0px auto;
+}
+
+.benifits_item_content {
+    margin-top: 20px;
+}
+
+.benifitsItem_title_inner {
+    font-size: 17px;
+    line-height: 24px;
+    color: var(--headingColor);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.benifitsitem_text_inner {
+    font-size: 19px;
+    line-height: 28px;
+    font-weight: 300;
+    text-transform: initial;
+    color: var(--headingColor);
+    text-align: center;
+}
+
+/* discuss form */
+
+.discuss_form_section {
+    background-color: #005688;
+}
+
+.discuss_form_title {
+    margin-bottom: 30px;
+}
+
+.discuss_heading {
+    color: var(--textColor);
+    font-size: 20px;
+    line-height: 1.228;
+    font-weight: 800;
+    text-align: center;
+    text-align: center
+}
+
+.discuss_form {
+    max-width: 768px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.discus_form_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.discus_form_item {
+    width: 100%;
+}
+
+.discus_form_input {
+    border: none !important;
+    background-color: var(--bgColor) !important;
+    color: var(--headingColor) !important;
+}
+
+.discus_formbtn_inner {
+    position: relative;
+}
+
+.discus_formbtn_inner input {
+    border: 1px solid #f55;
+    border-radius: 4px;
+    background-color: #f55;
+    color: var(--textColor);
+    display: block;
+    height: 50px;
+    display: grid;
+    place-content: center;
+    width: 150px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+/* technoly logo */
+
+.technology_logo {
+    background-color: #005688;
+}
+
+.technology_logo_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.technology_logo_wrapper img {
+    display: block;
+    max-width: 100%;
+    width: auto !important;
+    height: 55px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+/* faq section */
+
+.faq_section {
+    background-color: var(--bgColor);
+}
+
+.faq_wrapper {
+    max-width: 768px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.faq_item {
+    background: var(--textColor);
+    padding: 20px 0px;
+    margin-bottom: 30px;
+}
+
+.faqitem_heading_btn {
+    border: none;
+    background-color: var(--textColor) !important;
+    color: #2e323c !important;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    box-shadow: unset !important;
+}
+
+.faqitem_heading_btn:focus {
+    border: none;
+    box-shadow: unset !important;
+}
+
+.faq_item_body {
+    padding: 20px;
+}
+
+.faq_itembody_text {
+    padding-left: 64px;
+}
+
+/* overview section */
+
+.overview_item {
+    padding: 40px 30px;
+    border: 4px solid var(--bgColor);
+}
+
+.overview_item_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.overview_wrapper .row,
+.overveiw_gellary .row {
+    gap: 24px 0px;
+}
+
+.overveiw_gellary {
+    margin-top: 50px;
+}
+
+.overview_item_image {
+    width: 80px;
+    margin-right: 30px;
+}
+
+.overview_item_title {
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--headingColor);
+}
+
+.overview_item_text {
+    font-size: 18px;
+    line-height: 1.43;
+    color: var(--headingColor);
+    font-weight: 700;
 }
 
 /* footer section */
