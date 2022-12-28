@@ -7,7 +7,6 @@
     left: 0px;
     width: 100%;
     z-index: 999;
-    display: none;
 }
 
 .sticky {
@@ -733,7 +732,7 @@
     background-color: var(--bgColor);
 }
 
-.faq_wrapper {
+.faq_content {
     max-width: 768px;
     width: 100%;
     margin: 0px auto;
@@ -741,31 +740,45 @@
 
 .faq_item {
     background: var(--textColor);
-    padding: 20px 0px;
+}
+
+.faq_item:not(:last-child) {
     margin-bottom: 30px;
 }
 
-.faqitem_heading_btn {
+.faq_item_content {
+    padding: 15px 20px;
+    background: #FFFFFF;
     border: none;
-    background-color: var(--textColor) !important;
-    color: #2e323c !important;
+    box-sizing: border-box;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.03);
+    border-radius: 8px;
+}
+
+.accordion-body {
+    margin-left: 20px;
+}
+
+.accordion-button:focus {
+    border: none;
+    box-shadow: unset !important;
+}
+
+.faq_item_btn {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 26px;
+    color: var(--faqText);
     font-weight: 700;
-    box-shadow: unset !important;
 }
 
-.faqitem_heading_btn:focus {
-    border: none;
-    box-shadow: unset !important;
+.accordion-button:not(.collapsed) {
+    color: var(--headingColor) !important;
+    background-color: transparent !important;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
 }
 
-.faq_item_body {
-    padding: 20px;
-}
-
-.faq_itembody_text {
-    padding-left: 64px;
+.accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-icon) !important;
 }
 
 /* overview section */
@@ -808,12 +821,160 @@
     font-weight: 700;
 }
 
+/* rewards section */
+
+.reward_wrapper {
+    max-width: 1015px;
+    width: 100%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+}
+
+.reward_item {
+    position: relative;
+}
+
+.reward_item_image {
+    width: 150px;
+    height: 150px;
+    margin: 0px auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reward_item_image img {
+    height: auto;
+    width: 80%;
+}
+
+.reward_item_title {
+    font-size: 17px;
+    line-height: 1.43;
+    font-weight: 700;
+    text-align: center;
+    color: var(--headingColor);
+}
+
+/* home contact */
+
+.home_form {
+    background: #005688;
+}
+
+.home_form_content {
+    max-width: 860px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.home_contact_wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.home_contact_item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.home_contact_item_icon {
+    width: 50px;
+}
+
+.home_contact_item_text p {
+    font-size: 16px;
+    list-style: 22px;
+    font-weight: 700;
+    color: var(--textColor);
+}
+
+.input_control_home {
+    background-color: var(--textColor) !important;
+    color: var(--headingColor) !important;
+}
+
+.home_form_input_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.home_form_input_wrapper:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.home_form_input_inner {
+    width: 100%;
+}
+
+.home_form_input_inner textarea {
+    min-height: 110px;
+}
+
+.form_policy {
+    padding: 20px 0px;
+}
+
+.form_policy_inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.form_policy_check input {
+    height: 18px;
+    width: 18px;
+    display: block;
+}
+
+.form_policy_text {
+    color: var(--textColor);
+}
+
+.form_policy_text a {
+    color: var(--textColor);
+    font-weight: 600;
+}
+
+.form_policy_text a:hover {
+    text-decoration: underline;
+}
+
+.home_form_submit {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.home_form_submit input {
+    border: 1px solid #f55;
+    border-radius: 4px;
+    background-color: #f55;
+    color: var(--textColor);
+    padding: 15px 32px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* home contact end*/
+
 /* footer section */
 
 .footer_section {
     background-color: #003859;
     padding: 100px 0px;
-    display: none;
 }
 
 .footer_wrapper {
