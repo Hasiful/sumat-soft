@@ -10,6 +10,16 @@
     .home_form_input_wrapper {
         flex-direction: row;
     }
+
+    .footer_wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer_info {
+        grid-column: span 2;
+        margin-right: 120px;
+    }
+
 }
 
 @media(min-width: 768px) {
@@ -55,6 +65,10 @@
     .home_contact_wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .footer_wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media(min-width: 1024px) {
@@ -81,6 +95,19 @@
 
     .home_contact_wrapper {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer_wrapper {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .header_btn_wrapper,
+    .header_nav {
+        display: block;
+    }
+
+    .toggle_btn {
+        display: none;
     }
 }
 
