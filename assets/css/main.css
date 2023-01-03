@@ -61,11 +61,13 @@
     transition: var(--transition);
     opacity: 0;
     z-index: -1;
+    visibility: hidden;
 }
 
 .showmobileNav.mobile_nav {
     opacity: 1;
     z-index: 2;
+    visibility: visible;
 }
 
 .moible_nav_content {
@@ -328,6 +330,10 @@
     background-size: cover;
 }
 
+.banner_section_analysis {
+    background-image: url("https://uploads-ssl.webflow.com/5c98c492f5786d415aa3c82d/5ee24d5a6549b089dd8cb725_services-01.svg");
+}
+
 .banner_content {
     padding: 60px 10px 40px;
 }
@@ -349,7 +355,8 @@
     padding-top: 10px;
 }
 
-.banner_text {
+.banner_text,
+.banner_list ul li {
     line-height: 1.43;
     font-weight: 300;
     font-size: 18px;
@@ -358,6 +365,15 @@
 
 .banner_btn_wrapper {
     margin-top: 40px;
+}
+
+.banner_list {
+    margin-top: -20px;
+    margin-left: 40px;
+}
+
+.banner_list ul {
+    list-style: disc;
 }
 
 .banner_btn {
@@ -445,7 +461,6 @@
     display: block;
     padding: 40px 18px;
     border: 1px solid #f1f1f1;
-    margin: 12px 0px;
 }
 
 .our_service_thumbnail {
@@ -483,7 +498,8 @@
     margin-bottom: 10px;
 }
 
-.service_text {
+.service_text,
+.analysis_item_text {
     font-size: 18px;
     line-height: 26px;
     color: var(--headingColor);
@@ -1226,3 +1242,99 @@
     text-decoration: underline;
     color: var(--textColor);
 }
+
+/* business analysis page */
+
+.analysis_project_wrapper,
+.analysis_service_wrapper {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.analysis_service_wrapper {
+    max-width: 1050px;
+}
+
+.analysis_item_image {
+    height: 70px;
+    width: 90px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.analysis_item_image img {
+    height: 100%;
+}
+
+.analysis_item_heading {
+    margin-bottom: 10px;
+}
+
+.analysis_item_heading_title {
+    font-size: 18px;
+    line-height: 1.43;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--headingColor);
+}
+
+.analysis_service_item_list {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.analysis_service_item_list ul {
+    list-style: disc;
+}
+
+.analysis_service_item_list ul li {
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--headingColor);
+    font-weight: 300;
+}
+
+.about_analysis_contentList {
+    position: relative;
+}
+
+.about_analysis_contentList ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.about_analysis_contentList ul li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.about_analysis_contentList_image {
+    width: 25px;
+    display: flex;
+}
+
+.about_analysis_contentList_text {
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--headingColor);
+    font-weight: 700;
+}
+
+.about_analysis_textInner {
+    max-width: 1050px;
+    width: 100%;
+    margin: 40px auto 0px;
+}
+
+.about_analysis_text {
+    font-size: 18px;
+    color: var(--headingColor);
+    font-weight: 300;
+    line-height: 1.43;
+}
+
+/* business analysis page end */
