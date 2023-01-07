@@ -684,8 +684,8 @@
 
 .recent_project_item {
     padding-top: 20px;
-    padding-right: 10px;
-    padding-left: 10px;
+    /* padding-right: 10px;
+    padding-left: 10px; */
 }
 
 .project_item_inner {
@@ -1121,6 +1121,37 @@
 }
 
 /* home contact end*/
+
+/* protfolio section */
+
+.input_control_filter {
+    background-color: var(--textColor) !important;
+    padding: 0px 15px !important;
+    color: #999 !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+}
+
+
+.input_control_filter {
+    appearance: none;
+}
+
+/* protfolio section end*/
+
+/* blog page */
+
+.blog_banner_section {
+    margin-top: 80px;
+}
+
+.page_title {
+    font-size: 64px;
+    padding: 79px 0 56px;
+    line-height: 72px;
+    color: var(--headingColor);
+    font-weight: 900;
+}
 
 /* footer section */
 
